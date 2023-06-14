@@ -1,0 +1,12 @@
+<div class="card-container">
+    <div class="card" >
+      <img class="img" [src]="'https://image.tmdb.org/t/p/w500/' + item.poster_path" alt="Poster de la serie">
+      <h2>{{ item.title || item.name }}</h2>
+      <p><strong>Fecha Lanzamiento:</strong> {{item.first_air_date || item.release_date}}</p>
+      <p><strong>Sinopsis:</strong> {{ item.overview }}</p>
+      <ul>
+        <li *ngFor="let actor of item.cast">{{ actor.name }}</li>
+      </ul>
+    </div>
+  </div>
+  

@@ -1,0 +1,28 @@
+<h1>Películas y series populares</h1>
+
+<div class="search-container">
+  <input type="text" placeholder="Buscar películas, series y actores" [(ngModel)]="searchText">
+  <button (click)="search()">Buscar</button>
+</div>
+
+<div class="movie-container">
+  <div class="movie-card" *ngFor="let movie of filteredMovies" (click)="showDetails(movie)">
+    <h2>{{ movie.title }}</h2>
+    <img [src]="'https://image.tmdb.org/t/p/w500/' + movie.poster_path" alt="Poster de la película">
+    <p>{{ movie.overview }}</p>
+  </div>
+  <div class="no-results" *ngIf="filteredMovies.length === 0 && searchText.length > 0">
+    No se encontraron resultados en películas.
+  </div>
+</div>
+<br>
+<div class="movie-container">
+  <div class="movie-card" *ngFor="let serie of filteredSeries" (click)="showDetails(serie)">
+    <h2>{{ serie.name }}</h2>
+    <img [src]="'https://image.tmdb.org/t/p/w500/' + serie.poster_path" alt="Poster de la serie">
+    <p>{{ serie.overview }}</p>
+  </div>
+  <div class="no-results" *ngIf="filteredSeries.length === 0 && searchText.length > 0">
+    No se encontraron resultados en series.
+  </div>
+</div>
