@@ -1,13 +1,15 @@
 # Peliculas
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
+Este proyecto se generó con [Angular CLI](https://github.com/angular/angular-cli) versión 15.2.7.
 
 ## Inicio
 Recuerda ejecutar el comando 'npm install' después de descargar el proyecto para instalar todas las dependencias especificadas en el archivo package.json, incluyendo Axios.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Servidor de desarrollo
+Ejecute `ng serve` para un servidor de desarrollo. Navegue a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambia cualquiera de los archivos de origen.
 
-## Build
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Construir
+Ejecute `ng build` para compilar el proyecto. Los artefactos de compilación se almacenarán en el directorio `dist/`.
 
+## Uso en Vercel
+https://web-peliculas-lemon.vercel.app/main
 
